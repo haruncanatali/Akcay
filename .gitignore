@@ -1,0 +1,11 @@
+﻿/Akcay.API/obj/
+/Akcay.Application/obj/
+/Akcay.Domain/obj/
+/Akcay.Persistence/obj/
+/Akcay.WebUI/obj/
+/Akcay.API/bin/
+/Akcay.Application/bin/
+/Akcay.Domain/bin/
+/Akcay.Persistence/bin/
+/Akcay.WebUI/bin/
+.idea/
