@@ -29,7 +29,7 @@ public class ProductController : BaseController
     [HttpPost]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesDefaultResponseType]
-    public async Task<ActionResult<BaseResponseModel<Unit>>> Create(CreateProductCommand command)
+    public async Task<ActionResult<BaseResponseModel<Unit>>> Create([FromForm]CreateProductCommand command)
     {
         return Ok(await Mediator.Send(command));
     }
@@ -37,7 +37,7 @@ public class ProductController : BaseController
     [HttpPut]
     [ProducesResponseType(StatusCodes.Status201Created)]
     [ProducesDefaultResponseType]
-    public async Task<ActionResult<BaseResponseModel<Unit>>> Update(UpdateProductCommand command)
+    public async Task<ActionResult<BaseResponseModel<Unit>>> Update([FromForm]UpdateProductCommand command)
     {
         return Ok(await Mediator.Send(command));
     }

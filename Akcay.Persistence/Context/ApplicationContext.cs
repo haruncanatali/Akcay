@@ -6,6 +6,10 @@ namespace Akcay.Persistence.Context;
 
 public class ApplicationContext : DbContext,IApplicationContext
 {
+    public ApplicationContext(DbContextOptions<ApplicationContext> options) : base(options)
+    {
+        
+    }
     public DbSet<About> Abouts { get; set; }
     public DbSet<Booking> Bookings { get; set; }
     public DbSet<Category> Categories { get; set; }
