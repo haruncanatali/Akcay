@@ -22,7 +22,8 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Controllers\" />
+      <ProjectReference Include="..\Akcay.Application\Akcay.Application.csproj" />
+      <ProjectReference Include="..\Akcay.Persistence\Akcay.Persistence.csproj" />
     </ItemGroup>
 
 </Project>
